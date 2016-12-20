@@ -6,7 +6,13 @@
 
 body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background: url('../img/bg.jpg') no-repeat center center fixed;
+    /*background: url('../img/bg.jpg') no-repeat center center fixed;*/
+    background: #1e3c72;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #1e3c72, #196C87);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #1e3c72, #196C87);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -19,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
 }
 p {
-    font-size: 1.25em;
+    /*font-size: 1.25em;*/
     line-height: 1.6;
     color: #000;
 }
@@ -384,5 +390,11 @@ figure.effect-duke:hover h2, figure.effect-duke:hover p {
         width: 100%;
     }
 }
-
-/*# sourceMappingURL=kkd.css.map */
+.needsflex {
+    display: flex;
+    justify-content: center;
+}
+.jeanniepic {
+    height: 100vh;
+    width: auto;
+}
