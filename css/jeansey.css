@@ -272,6 +272,7 @@ footer p {
     width: 48%;
     height: auto;
     background: #1D4C82;
+    opacity: 1;
     text-align: center;
     cursor: pointer;
 }
@@ -285,6 +286,7 @@ footer p {
 .grid figure figcaption {
     padding: 2em;
     color: #fff;
+    opacity: 1;
     text-transform: uppercase;
     font-size: 1.25em;
     -webkit-backface-visibility: hidden;
@@ -395,6 +397,11 @@ figure.effect-duke:hover h2, figure.effect-duke:hover p {
     justify-content: center;
 }
 .jeanniepic {
-    height: 100vh;
-    width: auto;
+    height: 80vh;
+}
+.white {
+    color: #fff;
+}
+.blue {
+    color: #1e3c72;
 }
