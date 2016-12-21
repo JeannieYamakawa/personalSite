@@ -397,11 +397,41 @@ figure.effect-duke:hover h2, figure.effect-duke:hover p {
     justify-content: center;
 }
 .jeanniepic {
-    height: 80vh;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
 }
 .white {
     color: #fff;
 }
 .blue {
     color: #1e3c72;
+}
+.bottom-margin {
+    margin-bottom: 3vh;
+}
+.newrow {
+    height: 100vh;
+}
+.button {
+    margin: 0 auto;
+    cursor: pointer;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav li a {
+    text-decoration: none;
+    padding-top: 5px;
+    display: inline-block;
+    color: #000;
+    font-size: 120%;
+}
+.socialmedia {
+    width: 8vw;
+}
+.flexrow {
+    display: flex;
+    flex-direction: row
 }
