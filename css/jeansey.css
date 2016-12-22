@@ -66,7 +66,7 @@ hr {
 }
 .box {
     margin-bottom: 20px;
-    padding: 30px 15px;
+    padding: 30px 8px;
     background: #fff;
     background: rgba(255, 255, 255, 0.9);
 }
@@ -194,60 +194,6 @@ footer p {
 #container section:nth-of-type(2n) {
     background-color: #0b3954;
 }
-.hamburger {
-    position: fixed;
-    z-index: 4;
-    top: 30px;
-    left: 30px;
-    width: 45px;
-    height: 34px;
-    cursor: pointer;
-    user-select: none;
-}
-.hamburger span {
-    position: relative;
-}
-.hamburger span, .hamburger span:before, .hamburger span:after {
-    display: block;
-    width: 45px;
-    height: 6px;
-    background-color: #a03095;
-    border-radius: 2px;
-}
-.hamburger span:before, .hamburger span:after {
-    content: '';
-    position: absolute;
-}
-.hamburger span:before {
-    bottom: -14px;
-}
-.hamburger span:after {
-    bottom: -28px;
-}
-.close {
-    position: fixed;
-    top: 30px;
-    left: 30px;
-    width: 45px;
-    height: 34px;
-    cursor: pointer;
-}
-.close:before, .close:after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 45px;
-    height: 6px;
-    top: 50%;
-    background-color: white;
-    border-radius: 2px;
-}
-.close:before {
-    transform: translateY(-50%) rotate(45deg);
-}
-.close:after {
-    transform: translateY(-50%) rotate(-45deg);
-}
 .grid {
     position: relative;
     clear: both;
@@ -283,7 +229,7 @@ footer p {
     opacity: 0.8;
 }
 .grid figure figcaption {
-    padding: 2em;
+    padding: 1em;
     color: #fff;
     opacity: 1;
     text-transform: lowercase;
@@ -331,13 +277,7 @@ footer p {
     font-size: 68.5%;
 }
 
-/*---------------*/
-
-
-/***** Duke *****/
-
-
-/*---------------*/
+/*----portfolio grid effects-----*/
 
 figure.effect-duke img, figure.effect-duke p {
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -355,6 +295,8 @@ figure.effect-duke h2 {
     transform: scale3d(0.8, 0.8, 1);
     -webkit-transform-origin: 50% 100%;
     transform-origin: 50% 100%;
+    padding: 2vh;
+    margin: 1vh;
 }
 figure.effect-duke p {
     position: absolute;
@@ -377,7 +319,7 @@ figure.effect-duke:hover h2, figure.effect-duke:hover p {
     transform: scale3d(1, 1, 1);
 }
 
-/* Media queries */
+/* Overwriting bootstrap */
 
 @media screen and (max-width: 50em) {
     .content {
@@ -472,7 +414,7 @@ nav li a {
     background-color: #ccc
 }
 
-/* The Overlay (background) */
+/* Contact overlay */
 
 .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */
@@ -535,38 +477,25 @@ nav li a {
     right: 45px;
     font-size: 60px;
 }
-
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-
-@media screen and (max-height: 450px) {
-    .overlay a {
-        font-size: 20px
-    }
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
+.biggerfont {
+    font-size: 120%
+}
+.foot {
+    font-size: 60%;
+}
+@media screen and (max-width: 767px) and (min-width: 1px) {
+    .floated_div {
+        display: none;
     }
 }
-main {
-    margin-top: 20px;
+@media (min-width: 768px) and (max-width: 991px) {
+    .floated_div {
+        display: none;
+    }
 }
-main i {
-    color: white;
+.lesspadding {
+    padding-left: 2;
 }
-main .cc .contact {
-    width: 150px;
-    height: 150px;
-    background-color: #a73b89;
-    color: white;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-}
-main .cc .contact p {
-    margin: 0;
+.rightmargin {
+    margin-right: 0.7vw;
 }
