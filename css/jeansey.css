@@ -19,8 +19,8 @@ body {
     -o-background-size: cover;
 }
 h1, h2, h3, h4, h5, h6 {
-    text-transform: uppercase;
-    font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*text-transform: uppercase;*/
+    font-family: 'Sacramento', cursive;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -71,7 +71,7 @@ hr {
     background: rgba(255, 255, 255, 0.9);
 }
 .intro-text {
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-size: 1.25em;
     font-weight: 400;
     letter-spacing: 1px;
@@ -101,7 +101,7 @@ footer p {
         padding: 30px 0 10px;
         text-align: center;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-        font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: 'Sacramento', cursive;
         font-size: 5em;
         font-weight: 700;
         line-height: normal;
@@ -120,7 +120,6 @@ footer p {
         padding: 0 0 40px;
         text-align: center;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-        text-transform: uppercase;
         font-size: 1.25em;
         font-weight: 400;
         letter-spacing: 3px;
@@ -287,7 +286,7 @@ footer p {
     padding: 2em;
     color: #fff;
     opacity: 1;
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-size: 1.25em;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -395,6 +394,7 @@ figure.effect-duke:hover h2, figure.effect-duke:hover p {
 .needsflex {
     display: flex;
     justify-content: center;
+    /*border: 1px solid red;*/
 }
 .jeanniepic {
     margin-bottom: 3vh;
@@ -405,9 +405,17 @@ figure.effect-duke:hover h2, figure.effect-duke:hover p {
 }
 .blue {
     color: #1e3c72;
+    font-size: 230%
 }
 .bottom-margin {
     margin-bottom: 3vh;
+}
+.moremargin {
+    margin-bottom: 8vh;
+    margin-top: 8vh;
+}
+.top-margin {
+    margin-top: 10vh;
 }
 .newrow {
     height: 100vh;
@@ -429,9 +437,136 @@ nav li a {
     font-size: 120%;
 }
 .socialmedia {
-    width: 8vw;
+    height: 15vh;
+    margin-bottom: 3vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    opacity: 0.9;
+}
+.socialmedia:hover {
+    cursor: pointer;
+    opacity: 1;
+    transform: scale(1.1);
+}
+.socialmedia-label {
+    /*width: 8vw;*/
+    display: block;
+    margin: auto;
 }
 .flexrow {
     display: flex;
     flex-direction: row
+}
+.flexcolumn {
+    display: flex;
+    flex-direction: column;
+}
+.sidemargins {
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+.floatme {
+    float: center;
+}
+.submit {
+    background-color: #ccc
+}
+
+/* The Overlay (background) */
+
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(25, 128, 135);
+    /* Black fallback color */
+    background-color: rgba(25, 128, 135, 0.98);
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    /* 25% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: center;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+main {
+    margin-top: 20px;
+}
+main i {
+    color: white;
+}
+main .cc .contact {
+    width: 150px;
+    height: 150px;
+    background-color: #a73b89;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+main .cc .contact p {
+    margin: 0;
 }

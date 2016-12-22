@@ -19,22 +19,18 @@
     <link href="css/jeansey.scss" rel="stylesheet">
 
 
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
 </head>
 
 <body>
 
     <div class="brand">Jeannie Yamakawa</div>
+
+
     <div class="address-bar">Austin, TX | 210.549.6331</div>
 
     <nav class="navbar navbar-default" role="navigation">
@@ -57,13 +53,30 @@
                         <a href="about.html">About</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
+
+                        <!-- The overlay -->
+                        <div id="myNav" class="overlay">
+
+                            <!-- Button to close the overlay navigation -->
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                            <!-- Overlay content -->
+                            <div class="overlay-content">
+                                <a target="_blank" href="https://www.linkedin.com/in/jeannieyamakawa"><img src="img/linkedin.svg " class="socialmedia "></a>
+                                <a target="_blank" href="https://www.github.com/JeannieYamakawa">
+                                    <img class="socialmedia " src="img/github.svg "></a>
+                                <a href="mailto:jkyamakawa@gmail.com"><img class="socialmedia " src="img/email.svg "></a>
+                            </div>
+
+                        </div>
+
+                        <!-- Use any element to open/show the overlay navigation menu -->
+                        <a onclick="openNav()">Contact</a>
+
                     </li>
                     <li>
                         <a href="img/JeannieYamakawaResume.pdf" target="_blank">Résumé</a>
                     </li>
-
-
                 </ul>
             </div>
         </div>
@@ -73,49 +86,42 @@
 
         <div class="row ">
             <div class="box">
-                <div class='flexrow'>
-                    <div>
-                        <h1>LinkedIn</h1>
-                        <a target="_blank" href="https://www.linkedin.com/in/jeannieyamakawa"><img src="img/linkedin.png" class="socialmedia"></a>
-                    </div>
-                    <div>
-                        <h1>GitHub</h1>
-                        <a target="_blank" href="https://github.com/JeannieYamakawa"><img class="socialmedia" src="img/github.png"></a>
-
-                    </div>
-                </div>
-
-                <div class="col-lg-12">
+                <!-- <div class="col-lg-12">
                     <hr>
                     <h2 class="intro-text text-center blue ">Contact
                         <strong>form</strong>
                     </h2>
                     <hr>
-                    <form role="form">
-                        <div class="row">
-                            <div class="form-group col-lg-4">
+                    <form form method="POST" action="form-handler-nodb.php" role="form">
+                        <div class="row top-margin">
+                            <div class="form-group col-lg-4 ">
                                 <label>Name</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control ">
                             </div>
-                            <div class="form-group col-lg-4">
+                            <div class="form-group col-lg-4 ">
                                 <label>Email Address</label>
-                                <input type="email" class="form-control">
+                                <input type="email" class="form-control ">
                             </div>
-                            <div class="form-group col-lg-4">
+                            <div class="form-group col-lg-4 ">
                                 <label>Phone Number</label>
-                                <input type="tel" class="form-control">
+                                <input type="tel" class="form-control ">
                             </div>
                             <div class="clearfix"></div>
-                            <div class="form-group col-lg-12">
+                            <div class="form-group col-lg-12 ">
                                 <label>Message</label>
-                                <textarea class="form-control" rows="6"></textarea>
+                                <textarea class="form-control" rows="6 "></textarea>
                             </div>
-                            <div class="form-group col-lg-12">
+                            <div class="form-group col-lg-12 ">
                                 <input type="hidden" name="save" value="contact">
-                                <button type="submit" class="btn btn-default">Submit</button>
+                                <button type="submit" class="btn btn-default submit">Submit</button>
                             </div>
                         </div>
                     </form>
+                </div> -->
+                <div class='needsflex'>
+                    <img href="https://www.linkedin.com/in/jeannieyamakawa" src="img/linkedin.svg " class="socialmedia ">
+                    <img href="https://www.linkedin.com/in/jeannieyamakawa" class="socialmedia " src="img/github.svg ">
+
                 </div>
             </div>
         </div>
@@ -124,9 +130,9 @@
     <!-- /.container -->
 
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-12 text-center ">
                     <p>Copyright &copy; Jeannie Yamakawa 2016</p>
                 </div>
             </div>
@@ -134,12 +140,13 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="js/jquery.js "></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/overlay.js "></script>
+
 
 </body>
 
 </html>
-ml>

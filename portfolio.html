@@ -22,6 +22,8 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,7 +42,6 @@
     <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -48,10 +49,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
                 <a class="navbar-brand" href="about.html">Jeannie Yamakawa</a>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
@@ -60,22 +59,35 @@
                     <li>
                         <a href="about.html">About</a>
                     </li>
-
-
                     <li>
-                        <a href="contact.html">Contact</a>
+
+                        <!-- The overlay -->
+                        <div id="myNav" class="overlay">
+
+                            <!-- Button to close the overlay navigation -->
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                            <!-- Overlay content -->
+                            <div class="overlay-content">
+                                <a target="_blank" href="https://www.linkedin.com/in/jeannieyamakawa"><img src="img/linkedin.svg " class="socialmedia "></a>
+                                <a target="_blank" href="https://www.github.com/JeannieYamakawa">
+                                    <img class="socialmedia " src="img/github.svg "></a>
+                                <a href="mailto:jkyamakawa@gmail.com"><img class="socialmedia " src="img/email.svg "></a>
+                            </div>
+
+                        </div>
+
+                        <!-- Use any element to open/show the overlay navigation menu -->
+                        <a onclick="openNav()">Contact</a>
+
                     </li>
                     <li>
                         <a href="img/JeannieYamakawaResume.pdf" target="_blank">Résumé</a>
                     </li>
-
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
     </nav>
-
     <div class="container">
 
 
@@ -148,6 +160,8 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/overlay.js "></script>
+
 
 </body>
 
