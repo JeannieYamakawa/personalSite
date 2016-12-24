@@ -447,6 +447,16 @@ nav li a {
 
 /* The navigation links inside the overlay */
 
+
+/*.overlay img {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}*/
+
 .overlay a {
     padding: 8px;
     text-decoration: none;
