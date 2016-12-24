@@ -417,7 +417,7 @@ nav li a {
 /* Contact overlay */
 
 .overlay {
-    display: fixed;
+    display: flex;
     height: 100vh;
     width: 0;
     position: fixed;
@@ -435,27 +435,22 @@ nav li a {
 /* Position the content inside the overlay */
 
 .overlay-content {
-    position: relative;
-    top: 25%;
+    /*position: relative;*/
+    /*top: 25%;*/
     /* 25% from the top */
     width: 100%;
     /* 100% width */
     text-align: center;
     /* Centered text/links */
-    margin-top: 30px;
+    top: 25%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
 }
 
 /* The navigation links inside the overlay */
-
-
-/*.overlay img {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}*/
 
 .overlay a {
     padding: 8px;
@@ -483,11 +478,6 @@ nav li a {
 @media screen and (max-width: 767px) and (min-width: 1px) {
     .floated_div {
         display: none;
-    }
-    .overlay-content {
-        display: fixed;
-        top: 1vh;
-        float: center;
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
