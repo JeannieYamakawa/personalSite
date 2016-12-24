@@ -417,6 +417,7 @@ nav li a {
 /* Contact overlay */
 
 .overlay {
+    display: fixed;
     height: 100vh;
     width: 0;
     position: fixed;
