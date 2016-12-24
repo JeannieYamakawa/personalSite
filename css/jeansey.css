@@ -267,7 +267,7 @@ footer p {
     opacity: 0.75;
 }
 .grid figure h2 span {
-    font-weight: 800;
+    font-weight: 570;
 }
 .grid figure h2, .grid figure p {
     margin: 0;
@@ -470,7 +470,8 @@ nav li a {
     font-size: 60px;
 }
 .biggerfont {
-    font-size: 120%
+    /*font-size: 120%;*/
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .foot {
     font-size: 60%;
