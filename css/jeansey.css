@@ -479,10 +479,18 @@ nav li a {
     .floated_div {
         display: none;
     }
+    .overlay {
+        height: 100vh !important;
+        z-index: 100 !important;
+    }
 }
 @media (min-width: 768px) and (max-width: 991px) {
     .floated_div {
         display: none;
+    }
+    .overlay {
+        height: 100vh !important;
+        z-index: 100 !important;
     }
 }
 .lesspadding {
