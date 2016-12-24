@@ -472,6 +472,7 @@ nav li a {
 .biggerfont {
     /*font-size: 120%;*/
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    word-spacing: 4px;
 }
 .foot {
     font-size: 60%;
