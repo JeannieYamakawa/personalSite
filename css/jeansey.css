@@ -487,6 +487,9 @@ nav li a {
         height: 100vh !important;
         z-index: 101 !important;
     }
+    .closebtn {
+        z-index: 102;
+    }
 }
 @media (min-width: 768px) and (max-width: 991px) {
     .floated_div {
@@ -499,6 +502,9 @@ nav li a {
     .overlay-content {
         height: 100vh !important;
         z-index: 101 !important;
+    }
+    .closebtn {
+        z-index: 102;
     }
 }
 .lesspadding {
