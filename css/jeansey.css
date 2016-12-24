@@ -1,4 +1,4 @@
-    /*!
+/*!
  * Start Bootstrap - Jeannie Yamakawa (http://startbootstrap.com/)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
@@ -484,9 +484,10 @@ nav li a {
     .floated_div {
         display: none;
     }
-    .lesspadding {
-        padding-left: 2;
-    }
-    .rightmargin {
-        margin-right: 0.7vw;
-    }
+}
+.lesspadding {
+    padding-left: 2;
+}
+.rightmargin {
+    margin-right: 0.7vw;
+}
