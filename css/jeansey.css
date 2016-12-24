@@ -422,7 +422,7 @@ nav li a {
     width: 0;
     position: fixed;
     /* Stay in place */
-    z-index: 101;
+    z-index: 111;
     left: 0;
     top: 0;
     background-color: rgb(25, 128, 135);
@@ -474,19 +474,19 @@ nav li a {
     .floated_div {
         display: none;
     }
-    /*.overlay-content {
+    .overlay-content {
         display: fixed;
-        top: 0;
+        top: 1vh;
         float: center;
-    }*/
+    }
 }
 @media (min-width: 768px) and (max-width: 991px) {
     .floated_div {
         display: none;
     }
-    /*.overlay {
+    .overlay {
         height: 100vh;
-    }*/
+    }
 }
 .lesspadding {
     padding-left: 2;
