@@ -1,1 +1,1 @@
-+# Portfolio website at [www.JeannieYamakawa.com](www.JeannieYamakawa.com)
+# Portfolio website at [www.JeannieYamakawa.com](www.JeannieYamakawa.com)
