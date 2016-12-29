@@ -1,8 +1,7 @@
 <?php
 // Emails form data to you and the person submitting the form
 // This version requires no database.
-// Set your email below
-$myemail = "jkyamakawa@gmail.com"; // Replace with your email, please
+$myemail = "jkyamakawa@gmail.com"; 
 
 // Receive and sanitize input
 $name = $_POST['name'];
